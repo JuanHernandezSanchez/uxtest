@@ -29,6 +29,9 @@
 
  		 $('.gridbox.empty').on('click',function clickedFunctions(){
  		 		console.log('CLICKED')
+			
+
+				ga('send', 'event', respond, status , position);
 
  		 		if( status=='box'  && counter<7){
  		 			//disable box 
@@ -40,7 +43,7 @@
  					
  					//save value
  					position = $(this).attr('id')
- 					ga('send', 'event', 'Added Box', position, position);
+ 					// ga('send', 'event', respond, status , position);
 
  					//increase counter
  					counter++;
@@ -72,7 +75,7 @@
 	 		 			$(this).addClass('clickedbuild');
 
 	 					position = $(this).attr('id');
-	 					ga('send', 'event', 'Added Build', position, position);
+	 					// ga('send', 'event', 'Added Build', position, position);
 
  		 				status = 'gold';
 
@@ -90,7 +93,7 @@
 	 		 			$(this).addClass('clickedgold');
 
 	 					position = $(this).attr('id');
-	 					ga('send', 'event', 'Added Gold', position, position);
+	 					// ga('send', 'event', 'Added Gold', position, position);
 
 
 	 		 			status = 'options';
@@ -109,7 +112,7 @@
 	 		 			$(this).addClass('clickedoptions');
 		
 	 					position = $(this).attr('id');
-	 					ga('send', 'event', 'Added Options', position, position);
+	 					// ga('send', 'event', 'Added Options', position, position);
 
  						setTimeout(function(){
 		 		 			Reveal.next();
