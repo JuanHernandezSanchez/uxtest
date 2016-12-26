@@ -1,7 +1,7 @@
 
 
 			section.text{
-				font-size: 20px;
+				font-size: 18px;
 				max-width: 90%;
 				margin: 0 auto;
 				left: 5%;
@@ -24,7 +24,7 @@
 				top:30px;
 				left: 10%;
 				width: 60%;
-				font-size: 22px !important;
+				font-size: 20px !important;
 				font: auto;
 				display: none;
 				padding: 2em 10% !important;
@@ -65,7 +65,7 @@
 
 			.gridbox{ 
 				height: 10.6vh;
-				width: 6.3%;
+				width: 6.2%;
 				display: inline-block;
 				padding-top: 0;
 				margin: 0;
@@ -117,6 +117,22 @@
 		}
 }
 
+/*SMALL PHONE*/
+@media (max-height: 320px) and (orientation: landscape)  {
+
+	.slides section.text{
+		padding-top: 0 !important;
+	}
+
+	.reveal section.text img{
+		margin-top: 0;		
+	}
+
+	.gridbox{
+		height: 10.5vh;
+	}
+
+}
 /*PORTRAIT PHONE*/
 @media (max-width: 680px) and (orientation: portrait)  {
 
