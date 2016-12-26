@@ -17,8 +17,8 @@
    			document.getElementById('gamearea').appendChild(boxbreak); 
 		}		
 
-		$('.gridbox').css('height',(window.innerHeight-18)/9 +"px");
-		$('.gridbox').css('width',(window.innerWidth-30)/15 +"px");
+		$('.gridbox').css('height',(window.innerHeight-18)/9 );
+		$('.gridbox').css('width',(window.innerWidth-30)/15);
 
  		 ga('send', 'event', 'Test is Loaded', '', '');
 
