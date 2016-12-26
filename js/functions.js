@@ -3,6 +3,13 @@
 		var status ='box';
 		var counter = 0;
 
+
+
+		if(window.innerHeight != window.outerHeight){
+			$('.gridbox').css('height',window.innerHeight/9)
+		}
+
+
 		$('.progress').css('display','none')
 
 		for(var j=0; j<9;j++){
