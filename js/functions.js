@@ -4,6 +4,25 @@
 		var counter = 0;
 
 
+
+
+// full screnn
+window.addEventListener("load", function() { window. scrollTo(0, 0); });
+document.addEventListener("touchmove", function(e) { e.preventDefault() });
+
+var body = document.documentElement;
+if (body.requestFullscreen) {
+  body.requestFullscreen();
+} else if (body.webkitrequestFullscreen) {
+  body.webkitrequestFullscreen();
+} else if (body.mozrequestFullscreen) {
+  body.mozrequestFullscreen();
+} else if (body.msrequestFullscreen) {
+  body.msrequestFullscreen();
+}
+
+
+
 		$('.progress').css('display','none')
 
 		for(var j=0; j<9;j++){
@@ -19,6 +38,15 @@
 
 		$('.gridbox').css('height',(window.innerHeight-18)/9 );
 		$('.gridbox').css('width',(window.innerWidth-30)/15);
+
+		window.addEventListener("orientationchange", function() {
+			
+			console.log('changed')
+
+			$('.gridbox').css('height',(window.innerHeight-18)/9 );
+			$('.gridbox').css('width',(window.innerWidth-32)/15 );
+
+		});
 
  		 ga('send', 'event', 'Test is Loaded', '', '');
 
