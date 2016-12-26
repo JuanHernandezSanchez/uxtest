@@ -3,6 +3,8 @@
 		var status ='box';
 		var counter = 0;
 
+		$('.progress').css('display','none')
+
 		for(var j=0; j<9;j++){
 	   		for(var i=0; i<15;i++){
 	   			box  = document.createElement('div');
