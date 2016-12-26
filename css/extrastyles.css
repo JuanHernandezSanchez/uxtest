@@ -1,0 +1,132 @@
+
+
+			section.text{
+				font-size: 20px;
+				max-width: 90%;
+				margin: 0 auto;
+				left: 5%;
+				top: 0 !important;		
+			}
+
+			.backdrop{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255,255,255,0.5);
+				position: absolute;
+				top:0;
+				left: 0;
+				display: none;
+			}
+
+			.ontop{
+				background-color: white;
+				position: absolute;
+				top:30px;
+				left: 10%;
+				width: 60%;
+				font-size: 22px !important;
+				font: auto;
+				display: none;
+				padding: 2em 10% !important;
+			}
+
+			.nextbtn{
+				background-color: rgb(0,208,255);
+				color: white;
+				font-size: 19px;
+				border:0;
+				padding:0.25em  0.5em !important;
+			}
+
+			.thirdoption{
+				/*background-color:white;*/
+				width: 80%;
+				height:45px;
+				font-size: 1em;
+				background-color:rgb(0,208,255);
+				color: white;
+				border:4px solid black;
+			}
+			
+			#switchorientatonmessage{
+				display: none;
+			}
+
+			.slides section.unity{
+				line-height:0 !important;
+				padding:0 !important;
+			}
+
+			#gamearea{
+				width: 100%;
+				height: 100%;
+				background-color: white;
+			}
+
+			.gridbox{ 
+				height: 10.6vh;
+				width: 6.3%;
+				display: inline-block;
+				padding-top: 0;
+				margin: 0;
+				background-color: white;
+				border:1px solid #a3a3a3 !important;
+			 }
+
+ 			.gridbox.clickedbuild{
+				background-image: url(../assets/buildButton.svg);
+				background-size:100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}	
+ 			.gridbox.clickedoptions{
+				background-image: url(../assets/optionsButton.svg);
+				background-size:100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.gridbox.clickedgold{
+				background-image: url(../assets/goldButton.svg);
+				background-size:100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}	
+			.gridbox.clickedbox{
+				background-image: url(../assets/cube.svg);
+				background-size:100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+/*DESKTOP*/
+@media (min-width: 680px) and (orientation: landscape)  {
+		section.text{
+			font-size: 25px;
+			max-width: 60%;
+			margin: 0 auto;
+			left: 20%;
+			top: 10vw !important;		
+		}
+		
+		.gridbox:hover{ 	
+ 				background-color: lightgrey;
+		}
+
+		.gridbox{
+			cursor: pointer;
+		}
+}
+
+/*PORTRAIT PHONE*/
+@media (max-width: 680px) and (orientation: portrait)  {
+
+	#switchorientatonmessage{
+		display: block;
+		color: purple;
+		font-style: italic;
+	}
+	.nextbtn.special{
+		display: none;
+	}
+
+}
