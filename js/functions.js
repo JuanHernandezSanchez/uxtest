@@ -16,7 +16,7 @@
    			document.getElementById('gamearea').appendChild(boxbreak); 
 		}		
 
- 		 ga('send', 'event', 'Test', 'Loaded', '');
+ 		 ga('send', 'event', 'Test is Loaded', '', '');
 
  		 $('.mainbtm').click(function(){
  		 		Reveal.next();
@@ -25,12 +25,11 @@
 
  		 $('.howisholding').click(function(){
 				respond = $(this).attr('id')		 		
- 		 	    ga('send', 'event', 'Phone Position', respond, respond );
+ 		 	    // ga('send', 'event', 'Phone Position', respond, respond );
  		 		Reveal.next();
  		 });
 
  		 $('.gridbox.empty').on('click',function clickedFunctions(){
- 		 		console.log('CLICKED')
 			
 				position = $(this).attr('id')
 				ga('send', 'event', respond, status , position);
