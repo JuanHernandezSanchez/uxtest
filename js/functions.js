@@ -4,13 +4,6 @@
 		var counter = 0;
 
 
-
-		// if(window.innerHeight != window.outerHeight){
-			$('.gridbox').css('height',(window.innerHeight-18)/9 +"px");
-			$('.gridbox').css('width',(window.innerWidth-30)/15 +"px");
-		// }
-
-
 		$('.progress').css('display','none')
 
 		for(var j=0; j<9;j++){
@@ -23,6 +16,9 @@
    		    boxbreak  = document.createElement('br');
    			document.getElementById('gamearea').appendChild(boxbreak); 
 		}		
+
+		$('.gridbox').css('height',(window.innerHeight-18)/9 +"px");
+		$('.gridbox').css('width',(window.innerWidth-30)/15 +"px");
 
  		 ga('send', 'event', 'Test is Loaded', '', '');
 
