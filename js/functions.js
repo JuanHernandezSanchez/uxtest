@@ -39,6 +39,8 @@ if (body.requestFullscreen) {
 		$('.gridbox').css('height',(window.innerHeight-18)/9 );
 		$('.gridbox').css('width',(window.innerWidth-30)/15);
 
+
+
 		window.addEventListener("orientationchange", function() {
 			
 			console.log('changed')
