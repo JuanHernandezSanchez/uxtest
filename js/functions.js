@@ -29,10 +29,8 @@
  		 		Reveal.next();
  		 });
 
- 		 $('.gridbox.empty').on('click',function clickedFunctions(){
+ 		 $('.gridbox.empty').on('click',function (){
 			
-				position = $(this).attr('id')
-				ga('send', 'event', respond, status , position);
 
  		 		if( status=='box'  && counter<7){
  		 			//disable box 
@@ -121,6 +119,9 @@
 
  		 			}
  		 		}
+			
+				position = $(this).attr('id')
+				ga('send', 'event', respond, status , position);
 
  		 })
 

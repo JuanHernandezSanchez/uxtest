@@ -132,6 +132,10 @@
 		height: 10.5vh;
 	}
 
+	.ontop{
+		top:0;
+	}
+
 }
 /*PORTRAIT PHONE*/
 @media (max-width: 680px) and (orientation: portrait)  {
