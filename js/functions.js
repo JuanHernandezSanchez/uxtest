@@ -6,10 +6,8 @@
 
 
 		// if(window.innerHeight != window.outerHeight){
-			$('.gridbox').css('height',(window.innerHeight-18)/9)
-			$('.gridbox').css('width',(window.innerWidth-30)/15)
-
-
+			$('.gridbox').css('height',(window.innerHeight-18)/9 +"px");
+			$('.gridbox').css('width',(window.innerWidth-30)/15 +"px");
 		// }
 
 
