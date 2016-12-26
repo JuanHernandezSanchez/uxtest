@@ -30,7 +30,7 @@
  		 $('.gridbox.empty').on('click',function clickedFunctions(){
  		 		console.log('CLICKED')
 			
-
+				position = $(this).attr('id')
 				ga('send', 'event', respond, status , position);
 
  		 		if( status=='box'  && counter<7){
@@ -42,7 +42,7 @@
  		 			$(this).addClass('clickedbox');
  					
  					//save value
- 					position = $(this).attr('id')
+ 					// position = $(this).attr('id')
  					// ga('send', 'event', respond, status , position);
 
  					//increase counter
