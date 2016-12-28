@@ -43,8 +43,6 @@ if (body.requestFullscreen) {
 
 		window.addEventListener("orientationchange", function() {
 			
-			console.log('changed')
-
 			$('.gridbox').css('height',(window.innerHeight-18)/9 );
 			$('.gridbox').css('width',(window.innerWidth-32)/15 );
 
@@ -65,6 +63,8 @@ if (body.requestFullscreen) {
 
  		 $('.gridbox.empty').on('click',function (){
 			
+				position = $(this).attr('id')
+				ga('send', 'event', respond, status , position);
 
  		 		if( status=='box'  && counter<7){
  		 			//disable box 
@@ -107,7 +107,7 @@ if (body.requestFullscreen) {
 	 		 			$(this).removeClass('empty');
 	 		 			$(this).addClass('clickedbuild');
 
-	 					position = $(this).attr('id');
+	 					// position = $(this).attr('id');
 	 					// ga('send', 'event', 'Added Build', position, position);
 
  		 				status = 'gold';
@@ -144,7 +144,7 @@ if (body.requestFullscreen) {
 	 		 			$(this).removeClass('empty');
 	 		 			$(this).addClass('clickedoptions');
 		
-	 					position = $(this).attr('id');
+	 					// position = $(this).attr('id');
 	 					// ga('send', 'event', 'Added Options', position, position);
 
  						setTimeout(function(){
@@ -154,8 +154,6 @@ if (body.requestFullscreen) {
  		 			}
  		 		}
 			
-				position = $(this).attr('id')
-				ga('send', 'event', respond, status , position);
 
  		 })
 
